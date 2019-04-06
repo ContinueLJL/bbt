@@ -1,0 +1,208 @@
+@import url('reset.css');
+@import url('animate.min.css');
+
+/***************欢迎语 &&  主界面 样式 ************/
+
+#index img{
+	width:103px;
+	height:139px;
+}
+
+#index.slideLeft img{
+	margin:50px auto;
+}
+
+
+#hello  img:nth-of-type(1){
+	margin:7% auto;
+	width:20%;
+}
+
+#hello img:nth-of-type(2){
+	width:50%;
+	margin:5% auto;
+}
+
+#hello div >p{
+	margin-top:25px;
+	text-align:center;
+	color:#929493;
+	font-size:1.3em;
+	line-height:1.3em;
+	transform:translate(0,400px);
+}
+
+#hello a.but{
+	transform:translate(0,400px);
+}
+#index>div{
+	position: relative;
+    top: 40px;
+    left: 0;
+    right: 0;
+    width: 104px;
+    height: 170px;
+}
+#index svg{
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+
+/***************生成二维码界面*******************/
+
+
+#showcode p{
+	margin: 20px auto;
+    font-size: 1.1em;
+}
+#paint>img{
+	width:80%;
+}
+
+#codeinfo img.title , #showcode img.title{
+	width:50%;
+}
+
+/***************查询邮箱************************/
+#showMsg , #turnCreateCode{
+	text-align:center;
+}
+
+
+#showMsg>div,#turnCreateCode>div{
+	margin-bottom:100px;
+	font-size:1.1em;
+	line-height:1.5em;
+	color:#626262;
+}
+#showMsg>img , #turnCreateCode>img{
+	margin:30px auto 100px;
+	width:50%;
+}
+#showMsg p {
+	font-size:1.1em;
+	letter-spacing:0.1em;
+	padding-bottom:10px;
+}
+#showMsg p>span{
+	font-size:1.2em;
+	color:#8693a5;
+	letter-spacing:0.3em;
+}
+
+/***************线下报名界面*********************/
+label span{
+	text-decoration:underline;
+	color:#8ecacb;
+	font-size:1em;
+}
+
+
+
+
+#notice>div{
+	background:url('../img/letter.png') no-repeat;
+	background-size:100% 100%;
+}
+
+#notice div{
+	padding:10% 15% 15%;
+}
+
+#notice div>p {
+	text-align:left;
+	font-size:1em;
+	margin:20px 0;
+	letter-spacing:0.2em;
+	line-height:1.2em;
+}
+
+#notice .but , #text .but{
+	margin-top:0;
+}
+#notice h1{
+	text-align: center;
+    font-size: 1.4em;
+    color: rgb(98, 98, 98);
+}
+
+#submit{
+	clear:both;
+}
+
+#recivepeo form{
+	margin:15px auto 0;
+}
+
+
+
+/**********线上报名***************************/
+
+
+
+#text textarea{
+	border: none;
+    margin: 10% auto;
+    font-size: 1.3em;
+    height: 80%;
+
+}
+
+#text>div{
+	background:url('../img/letter.png') no-repeat;
+	background-size: 100% 100%;
+	background-origin: border-box;
+	height:450px;
+	padding:3% 10%;
+}
+
+#choice>div{
+	margin: 20px auto 35px;
+}
+
+
+#voice .but:nth-of-type(n + 3){
+	display:none;
+}
+
+
+#voice canvas{
+	display:block;
+}
+
+#over.none{
+	transform:translate(0,-100%);
+}
+
+
+/*********线上&线下 共同点***********/
+
+#unline>div img:nth-of-type(1), #online>div img:nth-of-type(1) {
+	width:30%;
+}
+
+#sureMsg p , #submit p , #choice p , #over p , #voice p{
+	font-size:1em;
+	margin-top:10px;
+}
+
+#sureMsg form , #submit form , #choice form{
+	margin:15px auto 0;
+	border:2px solid #626262;
+	border-radius:10px;
+	padding: 2% 10%;
+	position:relative;
+}
+
+#sureMsg form:after, #submit form:after, #choice form:after{
+	content:' ';
+	position:absolute;
+	height:100%;
+	width:100%;
+	background-color:transparent;
+	top:0;
+	left:0;
+	
+}

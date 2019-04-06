@@ -1,0 +1,178 @@
+html,body{
+	width:100%;
+	min-height:100%;
+}
+
+body{
+	background: url('../img/back2.png') repeat-y;
+	background-size:cover;
+	position:relative;	
+}
+
+*{
+	margin:0 auto;
+}
+
+body>div{
+	overflow:hidden;
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	opacity:0;
+	/* display:none; */
+}
+
+.init{
+	opacity:1;
+	z-index:2;
+}
+
+img{
+	display:block;
+}
+
+img.title{
+	width:40%;
+	margin-top:15px;
+    padding-top: 5px;
+}
+
+img.center{
+	transform:translate(-12.5px ,0);
+}
+
+a,p{
+	text-align:center;
+	font: 1em '微软雅黑',Arial Black ,Arial;
+	color:#626262;
+	letter-spacing:0.1em;
+	
+}
+
+a{
+	display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 100px; 
+	background:#8ecacd;
+	color:white;
+	border-radius: 10px;
+	font-size:1.3em;
+}
+a.but{
+	width:9em;
+	margin-top:30px;
+	margin-bottom:20px;
+	color:white;
+	box-shadow: 0px 0px 9px 1px #8ecacd;
+}
+a.but.turn{
+	color:#8ecacd;
+	background:white;
+}
+
+.return{
+	font-size:1em;
+	margin:20px 0 20px 10px;
+	float:left;
+	height:25px;
+	background:url('../img/return.png') no-repeat;
+	background-size:15px 25px;
+	width:15px;
+}
+.toRet{
+	float:left;
+	font-size:1em;
+	margin-left:8%;
+}
+.toNext{
+	float:right;
+	font-size:1em;
+	margin-right:8%;
+}
+
+
+
+form{
+	margin:120px auto 80px;
+	width:60%;
+	clear:both;
+}
+input[type=text] , textarea{
+	width:100%;
+	outline:none;
+	border-radius:0;
+	border:0 solid white;
+	border-bottom:2px solid #626262;
+	background-color:transparent;
+	font-size:1.1em;
+	margin:0px 0 20px;
+	box-sizing:border-box;
+	appearance: none; 
+	-webkit-appearance: none;
+	padding:0;
+
+}
+
+input[type=radio]{
+	margin-left:15px;
+}
+
+textarea{
+	border:2px solid #626262;
+	resize:none;
+	border-radius:10px;
+	margin-bottom:10px;
+	height:4em;
+	font-size: 1.3em;
+}
+
+label{
+	color:#626262;
+	font-size:1.1em;
+}
+
+#warm{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background:rgba(128, 128, 128, 0.7);
+	z-index:3;
+	opacity:1;
+}
+#warm>div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:90%;
+	height:200px;
+	background:white;
+	border-radius:10px;
+	text-overflow:clip;
+	white-space:nowrap;
+	overflow:hidden;
+}
+
+#warm button{
+	position:absolute;
+	bottom:5%;
+	height:50px;
+	width:50%;
+	left:50%;
+	transform:translate(-50%,0);
+	background:#8ecacb;
+	font-size:1em;
+	border:none;
+	border-radius:10px;
+	outline:none;
+	color:white;
+}
+
+#warm p{
+	margin:20px auto;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+		<link type='text/css' rel='stylesheet'  href='./css/index.css'>
+		<script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script>
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script src='./js/beforeLoad.js'></script>
+		<script src='./js/QRcodeEvent.js'></script>
+
+	</head>
+	<body>
+		<div id='codeinfo' class='init'>
+			<a class='return' href='./content.html'></a>
+			<img src='./img/createQR.png' class='title center'>
+			<form>
+				<label>您的名字</label><br><input type='text'><br>
+				<label>您的电话</label><br><input type='text' maxlength='11'><br>
+			</form>
+			<a class='but'>生成二维码</a>
+		</div>
+		<div id='showcode'>
+			<img src='./img/createQR.png' class='title'>
+			<p>保存图片分享到朋友圈<br>可以收到朋友给你写的信哦</p>
+			<div id="paint"><img></div>
+			<a class='but'>返回主页</a>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,146 @@
+
+/* 界面1文字上滑效果 */
+@keyframes slide{
+ 	0%{opacity:0;}
+	100%{transform:translate(0,0);}
+}
+
+#hello.init div>p:nth-of-type(1){
+	-webkit-animation: slide 0.7s linear 0s forwards;
+	animation: slide 0.7s linear 0s forwards;
+}
+#hello.init div>p:nth-of-type(2){
+	-webkit-animation: slide 0.7s linear 0.4s forwards;
+	animation: slide 0.7s linear 0.4s forwards;
+}
+#hello.init div>p:nth-of-type(3){
+	-webkit-animation: slide 0.7s linear 0.8s forwards;
+	animation: slide 0.7s linear 0.8s forwards;
+}
+#hello.init div>p:nth-of-type(4){
+	-webkit-animation: slide 0.7s linear 1.2s forwards;
+	animation: slide 0.7s linear 1.2s forwards;
+}
+#hello.init a.but{
+	-webkit-animation:slide 0.7s linear 1.6s forwards;
+	animation:slide 0.7s linear 1.6s forwards;
+}
+/*药丸*/
+.yy{
+    stroke-width:4;
+    -webkit-animation: lineMove 2s ease-out forwards;
+    animation: lineMove 2s ease-out forwards;
+
+}
+
+
+@keyframes lineMove {
+    0% {
+		stroke:#0aadb5;
+        stroke-dasharray: 0, 1000;
+    }
+    50% {
+		stroke:#8ecacd;
+        stroke-dasharray: 1000, 0;
+    
+    }
+    100% {
+      
+    }
+}
+
+@keyframes imgMove {
+    0% {
+       opacity:0;
+    }
+    100% {
+       opacity: 1;
+    }
+}
+
+#index>div img{
+	position:absolute;
+	top:0;
+	left:0;
+	opacity:0;
+	-webkit-animation: imgMove 2s ease-out  1s forwards;
+	animation: imgMove 2s ease-out  1s forwards;
+}
+
+
+
+
+/*界面切换*/
+
+
+@keyframes slideUp{
+	0%{
+		opacity:1;
+	}
+	100%{
+		transform:translate(-100%,0);
+		opacity:0;
+	}
+}
+@keyframes slideLeft{
+	0%{
+		/* transform:translate(100%,0);  */
+		opacity:0;
+	}
+	100%{
+		opacity:1;
+	}
+}
+
+.slideUp{
+	z-index:1;
+	-webkit-animation:slideUp 0.4s cubic-bezier(0, 0, 0, 1.22) 0s forwards;
+	animation:slideUp 0.4s cubic-bezier(0, 0, 0, 1.22) 0s forwards;
+}
+
+.slideLeft{
+	z-index:2;
+	-webkit-animation:slideLeft 1s cubic-bezier(0, 0, 0, 1.22) 0s forwards;
+	animation:slideLeft 1s cubic-bezier(0, 0, 0, 1.22) 0s forwards;
+}
+
+
+
+/*input焦点*/
+.lineLight{
+	border-bottom:2px solid #8ecacd !important;
+	-webkit-transition:all 0.5s ease-in-out 0s;
+	transition:all 0.5s ease-in-out 0s;
+}
+
+textarea.lineLight{
+	border:2px solid #8ecacd !important;
+	-webkit-transition:all 0.5s ease-in-out 0s;
+	transition:all 0.5s ease-in-out 0s;
+	
+}
+
+.lineFont{
+	color:#8ecacd;
+	-webkit-transition:all 0.5s ease-in-out 0s;
+	transition:all 0.5s ease-in-out 0s;
+}
+
+/*提示框*/
+@keyframes big{
+	0%{height:0;width:0;}
+	100%{}
+}
+@keyframes play{
+	0%{opacity:0;}
+	50%{opacity:0;}
+	100%{opacity:1;}
+}
+#warm>div{
+	-webkit-animation:big .2s ease-in forwards;
+	animation:big .2s ease-in forwards;
+}
+#warm>div *{
+	-webkit-animation:play .4s linear forwards;
+	animation:play .4s linear forwards;
+}

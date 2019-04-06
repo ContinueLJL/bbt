@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bullet Screen</title>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./css/BulletScreen.css">
+    <script src="./js/jquery-cookie.js"></script>
+</head>
+<body>
+    <div class="box">
+        <div id="screen">
+            <div class="top">
+                <div class="left">
+                    <img id="back" class="icon" src="./res/直播/返回(T,28;L,35).png" alt="">
+                    <b class="icon">直播名字</b>
+                </div>
+                <div class="right">
+                    <img class="icon" src="./res/直播/分享(T,28;R,35).png" alt="">
+                </div>
+            </div>
+            <div class="bottom">
+            <div class="left">
+                <img class="icon" src="./res/直播/暂停(T,405;L,35).png" alt="">
+            </div>
+            <div class="right">
+                <img class="icon" src="./res/直播/弹幕(T,405;R,110).png" alt="">
+                <img id="full" class="icon" src="./res/直播/全屏(T,405;R,35).png" alt="">
+            </div>
+            </div>
+        </div>
+        <div class="comment">
+            <div class="title">
+                <img class="avatar" src="./res/直播/头像（T,483;L，35）.png" alt="">
+                <div>
+                    <div id="name">获取用户名失败</div>
+                    <div class="online">
+                            <img src="./res/直播/互动（T,558;L,177）.png" alt="">
+                            <div id="number">18</div>
+                    </div>
+                    <!-- 记录直播间人数 -->
+                </div>
+                <img class="attention" src="./res/直播/关注(T,522;R,35).png" alt="">
+            </div>
+            <div id="discuss"></div>
+        </div>
+        <div id="extend">
+            <img id="fix" src="./res/直播/顶置弹幕（T1173;L,35).png" alt="">
+            <img id="scroll" src="./res/直播/滚动弹幕(T,1173;L,110)  2.png" alt="">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <img id="white" src="./res/直播/白色（T，1137；L,221).png" alt="">
+            <img id="red" src="./res/直播/红色（T，1137；L,294).png" alt="">
+            <img id="blue" src="./res/直播/蓝色（T，1137；L，368).png" alt="">
+            <img id="yellow" src="./res/直播/黄色（T，1137；L,441).png" alt="">
+            <img id="purple" src="./res/直播/紫色（T，1137；L,512）.png" alt="">
+            <img id="green" src="./res/直播/绿色（T，1137；L,588).png" alt="">
+            <img id="hide" src="./res/直播/返回（B,136;R,35).png" alt="">
+        </div>
+        <div class="send">
+            <img id="option" src="./res/直播/设置(B,26，L,35).png" alt="">
+            <input id="sendtext" name="sendtext" type="text" placeholder="输入想发的弹幕" maxlength="30">
+            <img class="line" src="./res/直播/输入框下划线（B,18).png" alt="">
+            <button id="sendbtn">
+                <img src="./res/直播/发送(B,28，R,35).png" alt="">
+            </button>
+        </div>
+    </div>
+    <script src="./js/BulletScreen.js"></script>
+</body>
+</html>

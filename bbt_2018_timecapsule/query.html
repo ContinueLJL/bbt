@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+		<link type='text/css' rel='stylesheet'  href='./css/index.css'>
+		<script src='./js/beforeLoad.js'></script>
+		<script>
+			//判断返回什么界面
+			function upface(){
+				var msg = document.getElementById('showMsg') , 
+					qrcode = document.getElementById('turnCreateCode') ,
+					nxmsg = msg.getElementsByTagName('div')[0];
+				
+				if(year_num != null && half_num != null)
+					msg.style.display = 'block' , 
+					nxmsg.innerHTML = '<p>您一共收到了</p><p><span>'+half_num+'</span>封半年期信件</p><p><span>'+year_num+'</span>封一年期信件</p>';
+				else 
+					slide(msg, qrcode);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="showMsg" class='init'>
+			<img src='./img/checkMail.png'>
+			<div></div>
+			<a class='but' href='./content.html'>返回主页</a>
+		</div>
+		<div id="turnCreateCode">
+			<img src='./img/checkMail.png'>
+			<div>
+				你还没有生成二维码哦~<br>
+				快去生成自己的专属二维码吧!
+			</div>
+			<a class='but' href='./QRcode.html'>生成我的二维码</a>
+			<a class='but turn' href='./content.html'>返回主页</a>
+		</div>
+
+	</body>
+</html>
+

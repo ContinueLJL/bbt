@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+		<link type='text/css' rel='stylesheet'  href='./css/index.css'>
+		<script src='./js/beforeLoad.js'></script>
+		<script src='./js/unlineEvent.js'></script>
+
+	</head>
+	<body id='unline'>
+		<div id='sendpeo' class='init'>
+			<a class='return'></a>
+			<img src='./img/unline.png' class='title center'> 
+			<form>
+				<label>寄件人姓名</label><br><input type='text'><br>
+				<label>寄件人电话</label><br><input type='text' maxlength='11'><br>
+				<input type='checkbox'><label>我已经阅读<span>寄信须知</span></label>
+			</form>
+			<a class='but'>确认</a>
+		</div> 
+		<div id='notice'>
+			<a class='return'></a>
+			<img src='./img/unline.png' class='title center'> 
+			<div>
+				<h1>寄信须知</h1>
+				<p>1.信件在到期寄出前由百步梯代为保管，但由于活动跨时较长，可能出现由于不可抗力因素导致信件丢失的情况，该风险由寄信人承担。
+					</p><p>2.寄信人在提交信件时需核对收件人信息和信封编码是否对应。</p><p>3.寄信人需保留好信封编码，以便信件寄出前用以查询核对信件收件人信息。
+				</p><p>4.寄信人若需要信封火漆印，则需在填写信件信息时【是否需要火漆印】一栏勾选【是】，由工作人员信件收集完毕之后统一盖火漆印。</p>
+			</div>
+			<a class='but'>同意</a>
+		</div>
+		<div id='recivepeo'>
+			<a class='return'></a>
+			<img src='./img/unline.png' class='title center'> 
+			<form>
+				<label>信封编号</label><br><input type='text' maxlength='8'><br>
+				<label>收件人姓名</label><br><input type='text'><br>
+				<label>收件人电话</label><br><input type='text' maxlength='11'><br>
+				<label>收件地址</label><br><textarea></textarea><br>
+				<label>寄出时间</label><input type='radio' name='year' data-year='半年'><label>半年</label><input type='radio' name='year' data-year='一年'><label>一年</label><div style='height:10px'></div>
+				<label>是否需要火漆</label><input type='radio' name='fire' data-fire='Y'><label>是</label><input type='radio' name='fire' data-fire = 'N'><label>否</label><br>
+			</form>
+			<a class='but'>下一步</a>
+		</div>
+		<div id='sureMsg'>
+			<img src='./img/unline.png' class='title'> 
+			<p>下面是你刚刚填写的收件人消息,<br>核对无误后就可以提交啦~</p>
+			<div></div>
+			<a class='but toRet turn'>返回修改</a>
+			<a class='but toNext'>确认寄信</a>
+		</div>
+		<div id='submit'>
+			<img src='./img/unline.png' class='title center'> 
+			<p>信息已经提交完毕啦!<br>写完信后贴好编号<br>投至各宿舍楼的百步梯胶囊信封箱中~</p>
+			<div></div>
+			<a class='but toRet turn'>再写一封</a>
+			<a class='but toNext'>结束寄信</a>
+		</div>
+	</body>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">  
+		<link type='text/css' rel='stylesheet'  href='./css/index.css'>
+		<script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script>
+		<script src='https://res.wx.qq.com/open/js/jweixin-1.0.0.js'></script>
+		<script src='./js/beforeLoad.js'></script>
+		<script src='./js/onlineEvent.js'></script>
+	</head>
+	<body id='online'>
+		<div id='recive' class='init'>
+			<a class='return'></a>
+			<img src='./img/online.png' class='title center'> 
+			<form>
+				<label>收件人姓名</label><br><input type='text'><br>
+				<label>收件人电话</label><br><input type='text' maxlength='11'><br>
+				<label>寄出时间</label><input type='radio' name='year' data-year='半年'><label>半年</label><input type='radio' name='year' data-year='一年'><label>一年</label><div style='height:10px'></div>
+			</form>
+			<a class='but'>确定</a>
+		</div>
+		<div id='choice'>
+			<img src='./img/online.png' class='title'> 
+			<p>下面是你刚刚填写的收件人消息,<br>核对无误后选择文字或语音开始写信~</p>
+			<div></div>
+			<a class='but'>文字</a>
+			<a class='but'>语音</a>
+			<a class='but turn'>返回修改</a>
+		</div>
+		<div id='text'>
+			<a class='return'></a>
+			<img src='./img/online.png' class='title center'> 
+			<div><textarea  value='' placeholder='点击这里开始写信吧~'></textarea></div>
+			<a class='but'>确定提交</a>
+		</div>
+		<div id='voice'>
+			<a class='return'></a>
+			<img src='./img/online.png' class='title center'> 
+			<p></p>
+			<canvas width='350' height='250' class='but'></canvas>
+			<a class='but'>开始录制</a>
+			<a class='but'>确认提交</a>
+			<a class='but turn'>重录</a>
+			<a class='but turn'>完成</a>
+		</div>
+		<div id='over' class='none'>
+			<img src='./img/online.png' class='title'> 
+			<p style='margin-top:25%'>梯仔将会在半年(或一年)后将信件寄出,<br>届时将会以短信的形式再次告知<br>收件人取件方式和取件码</p>
+			<p style='margin:5% auto 25%'>感谢您的参与</p>
+			<a class='but turn'>再写一封</a>
+			<a class='but'>返回主页</a>
+		</div>
+		<audio></audio>
+	</body>
+</html>
+
